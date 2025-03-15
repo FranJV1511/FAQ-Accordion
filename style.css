@@ -1,5 +1,3 @@
-
-
 .footer { font-size: 11px; text-align: center; }
 
 .footer a { color: hsl(228, 45%, 44%); }
@@ -78,7 +76,7 @@ body{
     border: 0px;
     width: 30px;
     height: 30px;
-    background: url(/assets/images/icon-plus.svg);
+    background: url(./assets/images/icon-plus.svg);
     background-size: cover;
     background-color: inherit;
     cursor: pointer;
@@ -98,14 +96,14 @@ body{
 }
 
 .faq-icon.open{
-    background: url(/assets/images/icon-minus.svg);
+    background: url(./assets/images/icon-minus.svg);
     transition: 0.3s ease;
 }
 
 @media (max-width: 760px){
 
     body{
-        background: url(/assets/images/background-pattern-mobile.svg) no-repeat;
+        background: url(./assets/images/background-pattern-mobile.svg) no-repeat;
         background-size: 100%;
         min-width: 375px;
     }
