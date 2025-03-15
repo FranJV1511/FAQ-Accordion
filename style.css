@@ -1,0 +1,22 @@
+@import url(https://fonts.google.com/specimen/Work+Sans);
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+ --White: hsl(0, 0%, 100%);
+ --Light--pink: hsl(275, 100%, 97%);
+ --Grayish--purple: hsl(292, 16%, 49%);
+--Dark--purple: hsl(292, 42%, 14%);
+}
+
+body{
+    min-height: 100vh;
+}
