@@ -1,8 +1,8 @@
 @import url(https://fonts.google.com/specimen/Work+Sans);
 
-.attribution { font-size: 11px; text-align: center; }
+.footer { font-size: 11px; text-align: center; }
 
-.attribution a { color: hsl(228, 45%, 44%); }
+.footer a { color: hsl(228, 45%, 44%); }
 
 *{
     box-sizing: border-box;
@@ -19,4 +19,99 @@
 
 body{
     min-height: 100vh;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: url('./assets/images/background-pattern-desktop.svg') no-repeat;
+    background-color: var(--Light--pink);
+    background-position: top;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.faq-accordion{
+    display: block;
+    padding: 40px 15px;
+    margin: auto;
+    color: hsl(292, 42%, 14%);
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    border-radius: 1rem;
+    box-shadow: 0px 30px 100px -50px black;
+}
+
+.faq-heading{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.faq-content{
+    margin-bottom: 10px;
+}
+
+.faq-dropdown{
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-dropdown-header{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 0;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.faq-dropdown-header h4{
+    font-weight: 600;
+    width: 95%;
+}
+
+.faq-icon{
+    border: 0px;
+    width: 30px;
+    height: 30px;
+    background: url(/assets/images/icon-plus.svg);
+    background-size: cover;
+    background-color: inherit;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+.faq-dropdown-body{
+    margin-top: 15px;
+    display: none;
+}
+
+.faq-dropdown-body.open{
+    display: block;
+}
+
+.faq-icon.open{
+    background: url(/assets/images/icon-minus.svg);
+    transition: 0.3s ease;
+}
+
+@media (max-width: 760px){
+
+    body{
+        background: url(/assets/images/background-pattern-mobile.svg) no-repeat;
+        background-size: 100%;
+        min-width: 375px;
+    }
+
+    .faq-accordion{
+        min-width: 400px;
+        margin: auto;
+    }
 }
